@@ -9,7 +9,7 @@ function ModalFunction(props){
     return (
         <Modal show={show}>
             <Modal.Header >
-                <Modal.Title>ATENÇÃO</Modal.Title>
+                <Modal.Title> <img src="/warning2.png"/> ATENÇÃO</Modal.Title>
             </Modal.Header>
             
             <Modal.Body>

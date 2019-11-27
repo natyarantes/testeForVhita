@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "../components/css/style.scss"
 import {useRouter} from 'next/router'
+import Container from 'react-bootstrap/Container'
 
 
 function CalculaProteina (props){
@@ -33,10 +34,14 @@ switch (tipoAtividade) {
 
     
     return(
-        <div>
-            <h3>Quantidade de proteina necessária:</h3>
-            <p>Sua quantidade de proteína necessária diariamente é de: {qtdProteina}g.</p>
-        </div>
+        <Container>
+            <div className="titulo">
+                <h2>Quantidade de proteina necessária:</h2>
+                <p>Sua quantidade de proteína necessária diariamente é de:<strong> {qtdProteina}g</strong>.</p>
+
+                
+            </div>
+        </Container>
     )
 }
 
